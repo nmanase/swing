@@ -1,0 +1,12 @@
+
+swing=/home/etienne/Dev/swing CD=~/Dev/swing filter="*.java makefile" {
+ ControleurPuissance4Graphique.java
+ ControleurPuissance4Txt.java
+ ControleurVuePuissance4Graphique.java
+ Puissance4.java
+ Puissance4ColonneException.java
+ Puissance4GraphiqueTxt.java
+ Puissance4Txt.java
+ VuePuissance4Txt.java
+ makefile
+}

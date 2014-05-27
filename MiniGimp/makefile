@@ -4,6 +4,8 @@ all:
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Dessin.java
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Figure.java
 	
+	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Utilitaires.java
+	
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Cercle.java
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/DessineCercleListener.java
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Rectangle.java
@@ -11,4 +13,6 @@ all:
 	
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Controle.java
 	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/MiniGimp.java
-	javac -cp ./classes/ -d classes/ src/fr/insarouen/asi/minigimp/Utilitaires.java
+
+exe :
+	java -cp ./classes/ fr.insarouen.asi.minigimp.MiniGimp

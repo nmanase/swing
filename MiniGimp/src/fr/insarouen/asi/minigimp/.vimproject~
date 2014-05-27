@@ -1,0 +1,14 @@
+
+MiniGimp=/home/etienne/Dev/swing/MiniGimp/src/fr/insarouen/asi/minigimp CD=~/Dev/swing/Minigimp/src/fr/insarouen/asi/minigimp filter="*.java" {
+ Cercle.java
+ Controle.java
+ Dessin.java
+ Dessinable.java
+ DessinablesData.java
+ DessineCercleListener.java
+ DessineRectangleListener.java
+ Figure.java
+ MiniGimp.java
+ Rectangle.java
+ Utilitaires.java
+}

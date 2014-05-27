@@ -1,0 +1,48 @@
+/*
+ * Main.java
+ *
+ * Created on 20 juin 2006, 17:26
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+
+package fr.insarouen.asi.prog.feux_a_trous;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author nicolas
+ */
+public class Main {
+
+    public static void main(String[] args) {
+        Feu feu = new Feu(Feu.Etat.ARRET);
+        
+        AffichageFeu affichageFeu = new AffichageFeu(feu);        
+        JFrame frameAfficheFeu= new JFrame("Feux");
+        frameAfficheFeu.setContentPane(affichageFeu);
+        frameAfficheFeu.pack();
+        frameAfficheFeu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frameAfficheFeu.setVisible(true);
+        
+
+        AffichageFeu affichageFeu2 = new AffichageFeu(feu);
+        JFrame frameAfficheFeu2= new JFrame("Feux");
+        frameAfficheFeu2.setContentPane(affichageFeu2);
+        frameAfficheFeu2.pack();
+        frameAfficheFeu2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frameAfficheFeu2.setVisible(true);
+        
+        
+        JFrame controleurFeu = new JFrame("ControleurFeu");
+        controleurFeu.setContentPane(new ControleurFeuGraphique(feu));
+        controleurFeu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        controleurFeu.pack();
+        controleurFeu.setVisible(true);
+        
+    }
+}
